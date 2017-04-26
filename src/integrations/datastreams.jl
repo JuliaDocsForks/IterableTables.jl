@@ -2,6 +2,8 @@
 using DataStreams
 using WeakRefStrings
 
+println("DataStreams integration was loaded.")
+
 immutable DataStreamIterator{T, S<:DataStreams.Data.Source, TC, TSC}
     source::S
     schema::DataStreams.Data.Schema
